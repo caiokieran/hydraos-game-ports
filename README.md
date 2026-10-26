@@ -18,7 +18,7 @@ Os cinco ports atuais precisam de arquivos de dados originais, fornecidos pelo u
 
 - `catalog.json`: os cinco ports, capas, descrições, caminhos e hashes.
 - `games/*.ipk`: pacotes ARM32, separados do Launcher.
-- `scripts/hide-launchpoints.py`: oculta o launchpoint do webOS e atualiza hashes dos pacotes.
+- `scripts/hide-launchpoints.py`: oculta o launchpoint do webOS, normaliza os cabeçalhos ar e o marcador IPK e atualiza hashes dos pacotes.
 - `refresh-catalog.cjs`: verifica hashes e compatibilidade ARM do catálogo.
 - `JediAcademy/`: exemplo da estrutura USB para os dados do Jedi Academy.
 

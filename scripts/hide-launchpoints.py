@@ -23,16 +23,23 @@ def write_ar(entries):
     for name,h,body in entries:
         h=bytearray(h); encoded=(name+'/').encode('ascii')
         if len(encoded)>16: raise ValueError('Nome ar não suportado')
-        h[:16]=encoded.ljust(16,b' '); h[48:58]=str(len(body)).encode('ascii').rjust(10,b' ')
+        h[:16]=encoded.ljust(16,b' '); h[48:58]=str(len(body)).encode('ascii').ljust(10,b' ')
         out.extend(h); out.extend(body)
         if len(body)&1: out.extend(b'\n')
     return bytes(out)
 
 def hide(ipk, app_id):
-    output=[]; changed=False; found=False
+    # Always rewrite ar headers so member sizes use the left-aligned decimal
+    # layout accepted by webOS's package extractor, even when appinfo is
+    # already hidden.
+    output=[]; changed=True; found=False
     for name,h,body in read_ar(ipk.read_bytes()):
+        if name=='debian-binary':
+            if body != b'2.0\n': changed=True
+            output.append((name,h,b'2.0\n'))
+            continue
         if name!='data.tar.gz': output.append((name,h,body)); continue
-        target=io.BytesIO()
+        target=io.BytesIO(); data_changed=False
         with tarfile.open(fileobj=io.BytesIO(body),mode='r:gz') as src, tarfile.open(fileobj=target,mode='w:gz',format=tarfile.GNU_FORMAT) as dst:
             for member in src.getmembers():
                 stream=src.extractfile(member) if member.isfile() else None
@@ -42,9 +49,9 @@ def hide(ipk, app_id):
                     else:
                         info['visible']=False
                         data=(json.dumps(info,indent=2,ensure_ascii=False)+'\n').encode('utf-8')
-                        member=copy.copy(member); member.size=len(data); dst.addfile(member,io.BytesIO(data)); changed=True
+                        member=copy.copy(member); member.size=len(data); dst.addfile(member,io.BytesIO(data)); changed=True; data_changed=True
                 else: dst.addfile(member,stream)
-        output.append((name,h,target.getvalue()))
+        output.append((name,h,target.getvalue() if data_changed else body))
     if not found: raise ValueError(f'appinfo não encontrado: {ipk.name}/{app_id}')
     if changed: ipk.write_bytes(write_ar(output))
 
