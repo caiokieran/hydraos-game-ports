@@ -1,23 +1,25 @@
 # HydraOS Game Repository
 
-Este repositório contém somente o port **OpenJK / Star Wars: Jedi Academy** para LG webOS TV ARM32, seu IPK e o catálogo. **Não contém o HydraOS Launcher nem os arquivos de dados originais do jogo.** O launcher está no repositório separado [caiokieran/hydraos-launcher](https://github.com/caiokieran/hydraos-launcher).
+Este repositório publica cinco ports para LG webOS TV ARM32 e seus IPKs: OpenJK / Jedi Academy, DevilutionX, Half-Life, OpenLara e OpenMoHAA / Medal of Honor: Allied Assault. O HydraOS Launcher fica no repositório separado [caiokieran/hydraos-launcher](https://github.com/caiokieran/hydraos-launcher).
 
 ## Adicionar ao HydraOS
 
-Na TV, abra **HydraOS → Configurações → Fontes de jogos** e adicione este endereço HTTPS:
+Na TV, abra **Configurações → Fontes de jogos** e adicione:
 
 ```text
 https://raw.githubusercontent.com/caiokieran/hydraos-game-ports/main/catalog.json
 ```
 
-O catálogo lista o IPK do OpenJK. O HydraOS Launcher atual consegue carregar e exibir os jogos do catálogo adicionado; o download e a instalação de IPKs pelo catálogo ainda precisam ser implementados. Depois de instalar o OpenJK, os dados originais devem ser fornecidos pelo usuário em uma unidade USB, na pasta `JediAcademy/data/base/`. O diretório `JediAcademy/` neste repositório é só um guia de estrutura, sem conteúdo proprietário.
+O catálogo traz metadados de capa, descrição, gênero, desenvolvedor e ano, além de versão, IPK e SHA-256. O Hydra mostra somente jogos publicados em fontes que você adicionou, com **Download** quando não instalado, e **Jogar** e **Remover** quando instalado. A opção de atalho na biblioteca do Hydra é independente.
 
-## Arquivos
+Os cinco ports atuais precisam de arquivos de dados originais, fornecidos pelo usuário. Nenhum dado comercial está incluído. O app dos IPKs é preparado como `visible: false`, então não cria um tile na tela inicial do webOS; o Hydra ainda o inicia por ID.
 
-- `catalog.json`: índice do OpenJK e hash SHA-256 do IPK.
-- `catalog.template.json`: formato para acrescentar outros ports no futuro.
-- `games/openjk012.ipk`: pacote ARM32 do OpenJK.
-- `JediAcademy/`: instruções de onde colocar os dados originais no USB; nenhum dado do jogo está incluído.
-- `refresh-catalog.cjs`: valida os metadados e atualiza os hashes.
+## Arquivos e manutenção
 
-O IPK é um port de terceiros e depende de dados originais de Jedi Academy. Verifique as licenças e as condições de redistribuição do OpenJK antes de redistribuir o pacote.
+- `catalog.json`: os cinco ports, capas, descrições, caminhos e hashes.
+- `games/*.ipk`: pacotes ARM32, separados do Launcher.
+- `scripts/hide-launchpoints.py`: oculta o launchpoint do webOS e atualiza hashes dos pacotes.
+- `refresh-catalog.cjs`: verifica hashes e compatibilidade ARM do catálogo.
+- `JediAcademy/`: exemplo da estrutura USB para os dados do Jedi Academy.
+
+Verifique as licenças dos ports e as condições de redistribuição dos respectivos projetos antes de redistribuir os IPKs.

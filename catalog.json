@@ -1,16 +1,81 @@
 {
   "games": [
     {
-      "sha256": "a59ddd3129fe17a68af775cd5f7e18403464e2ae8311489c9cf07899414a372c",
+      "sha256": "795b24213a5253d9f71fb12e9833b3e7170596d1bbfa10135a0a431cf256dcf3",
       "id": "org.webosbrew.openjk",
       "architecture": "arm",
       "appId": "org.webosbrew.openjk",
       "title": "Star Wars: Jedi Academy (OpenJK)",
       "version": "0.1.2",
       "needsOriginalGameData": true,
-      "ipk": "games/openjk012.ipk"
+      "ipk": "games/openjk012.ipk",
+      "cover": "https://gamefaqs.gamespot.com/a/box/7/7/6/52776_front.jpg",
+      "description": "Crie seu próprio Jedi, escolha como avançar na Academia e enfrente o lado sombrio em um jogo de ação em primeira e terceira pessoa. O port OpenJK requer os dados originais de Jedi Academy.",
+      "genre": "Ação · FPS · Star Wars",
+      "releaseYear": 2003,
+      "developer": "Raven Software · OpenJK"
+    },
+    {
+      "id": "org.webosbrew.devilutionxtest",
+      "appId": "org.webosbrew.devilutionxtest",
+      "title": "DevilutionX",
+      "version": "1.5.5",
+      "architecture": "arm",
+      "sha256": "f84c5efe80f11af2f38c11945fb5eb448913bd30623e7da915c8deac05ab01db",
+      "ipk": "games/devilutionx155.ipk",
+      "needsOriginalGameData": true,
+      "cover": "https://images.launchbox-app.com/4145c24f-2c36-4002-9cda-66c3756bc705.png",
+      "description": "Explore as profundezas da Catedral de Tristram neste RPG de ação clássico. O port DevilutionX precisa dos arquivos originais de Diablo ou Hellfire.",
+      "genre": "RPG · Ação",
+      "releaseYear": 1996,
+      "developer": "Diablo · DevilutionX"
+    },
+    {
+      "id": "org.webosbrew.openhl",
+      "appId": "org.webosbrew.openhl",
+      "title": "Half-Life",
+      "version": "0.1.2",
+      "architecture": "arm",
+      "sha256": "6d05ff21945d96cad14599865536c590b1bd871ab4cf53329501330684200fe4",
+      "ipk": "games/openhl010.ipk",
+      "needsOriginalGameData": true,
+      "cover": "https://www.dosdays.co.uk/media/games/halflife/_cover.jpg",
+      "description": "Depois de um experimento dar errado no complexo Black Mesa, Gordon Freeman precisa sobreviver a criaturas alienígenas e forças militares. Requer os arquivos originais de Half-Life.",
+      "genre": "FPS · Ficção científica",
+      "releaseYear": 1998,
+      "developer": "Valve · Xash3D FWGS"
+    },
+    {
+      "id": "org.webosbrew.openlara",
+      "appId": "org.webosbrew.openlara",
+      "title": "OpenLara",
+      "version": "0.1.0",
+      "architecture": "arm",
+      "sha256": "5e03c2edfc23492e9e04615a35db92ee62dfa879efb2ae1237cb95f601ce1776",
+      "ipk": "games/openlara010.ipk",
+      "needsOriginalGameData": true,
+      "cover": "https://images.launchbox-app.com/c52601b4-ca50-4e65-be0a-792b1053486f.png",
+      "description": "Aventure-se por tumbas antigas, resolva enigmas e explore ambientes 3D com o port aberto do motor Tomb Raider. Requer os dados originais do jogo.",
+      "genre": "Aventura · Ação",
+      "releaseYear": 1996,
+      "developer": "Core Design · OpenLara"
+    },
+    {
+      "id": "org.webosbrew.openmohaa",
+      "appId": "org.webosbrew.openmohaa",
+      "title": "Medal of Honor: Allied Assault",
+      "version": "0.82.1",
+      "architecture": "arm",
+      "sha256": "46a2b262e87b964c32809797d96f440a9be09a65e0f6f5f8c5d118efc19a8fa9",
+      "ipk": "games/openmohaa0821.ipk",
+      "needsOriginalGameData": true,
+      "cover": "https://images.launchbox-app.com/r2_0fe1e010-39d2-4da0-81d5-de414bb9cad6.jpg",
+      "description": "Acompanhe o tenente Mike Powell em uma campanha de ação ambientada na Segunda Guerra Mundial. O port OpenMoHAA requer os dados originais de Allied Assault.",
+      "genre": "FPS · Segunda Guerra",
+      "releaseYear": 2002,
+      "developer": "2015, Inc. · OpenMoHAA"
     }
   ],
-  "repository": "HydraOS OpenJK",
+  "repository": "HydraOS Game Ports",
   "schemaVersion": 1
 }

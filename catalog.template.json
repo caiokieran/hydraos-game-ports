@@ -8,6 +8,11 @@
       "title": "Compatible game port",
       "version": "1.0.0",
       "needsOriginalGameData": false,
+      "cover": "https://example.org/game-cover.jpg",
+      "description": "Resumo do jogo e informação sobre dados originais necessários.",
+      "genre": "Ação · Aventura",
+      "releaseYear": 2025,
+      "developer": "Studio / port project",
       "ipk": "games/example-game_1.0.0_arm.ipk"
     }
   ],
