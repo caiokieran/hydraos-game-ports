@@ -1,0 +1,108 @@
+{
+  "games": [
+    {
+      "sha256": "af76f2bb79fd13a22b7a9d96538b5c5887655231465ce45ab8cbf3dd828dc748",
+      "id": "org.webosbrew.openjk",
+      "architecture": "arm",
+      "appId": "org.webosbrew.openjk",
+      "title": "Star Wars: Jedi Academy (OpenJK)",
+      "version": "0.1.2",
+      "needsOriginalGameData": false,
+      "ipk": "games/openjk012.ipk",
+      "cover": "https://static.fnac-static.com/multimedia/images_produits/ZoomPE/0/4/9/5030917020940/tsp20250117073255/Star-Wars-Jedi-Academy.jpg",
+      "description": "Instale Jedi Academy e seus dados pelo Hydra. Os arquivos do jogo ficam no USB conectado à TV; o IPK permanece oculto do launcher do webOS.",
+      "genre": "Ação · FPS · Star Wars",
+      "releaseYear": 2003,
+      "developer": "Raven Software · OpenJK",
+      "dataRoot": "JediAcademy",
+      "dataFiles": [
+        {
+          "path": "data/base/assets0.pk3",
+          "url": "https://media.githubusercontent.com/media/caiokieran/hydraos-game-ports/main/JediAcademy/data/base/assets0.pk3",
+          "size": 561806019,
+          "sha256": "ffea9e7489bad7175411d122e0652b4272efb67c0e71805d1f4d8058084b5939"
+        },
+        {
+          "path": "data/base/assets1.pk3",
+          "url": "https://media.githubusercontent.com/media/caiokieran/hydraos-game-ports/main/JediAcademy/data/base/assets1.pk3",
+          "size": 652804510,
+          "sha256": "5f196826e226b1115bd46f54697334ca970c8261dd76864c1600179ff38e4c4f"
+        },
+        {
+          "path": "data/base/assets2.pk3",
+          "url": "https://media.githubusercontent.com/media/caiokieran/hydraos-game-ports/main/JediAcademy/data/base/assets2.pk3",
+          "size": 1116384,
+          "sha256": "8f21cdd89afe78fdf916d103117f4b2621c6f4781dee003716057dc705ef98af"
+        },
+        {
+          "path": "data/base/assets3.pk3",
+          "url": "https://media.githubusercontent.com/media/caiokieran/hydraos-game-ports/main/JediAcademy/data/base/assets3.pk3",
+          "size": 9282026,
+          "sha256": "0f542dccb6858fc10a8083ca71f581c9eba93173386e03a9e5e05d3a56118f78"
+        }
+      ]
+    },
+    {
+      "id": "org.webosbrew.devilutionxtest",
+      "appId": "org.webosbrew.devilutionxtest",
+      "title": "DevilutionX",
+      "version": "1.5.5",
+      "architecture": "arm",
+      "sha256": "247df94ef2d667b05a7c717d72f7c5c34eca637a7563e77b6215bb631d1f9a69",
+      "ipk": "games/devilutionx155.ipk",
+      "needsOriginalGameData": true,
+      "cover": "https://images.launchbox-app.com/4145c24f-2c36-4002-9cda-66c3756bc705.png",
+      "description": "Explore as profundezas da Catedral de Tristram neste RPG de ação clássico. O port DevilutionX precisa dos arquivos originais de Diablo ou Hellfire.",
+      "genre": "RPG · Ação",
+      "releaseYear": 1996,
+      "developer": "Diablo · DevilutionX"
+    },
+    {
+      "id": "org.webosbrew.openhl",
+      "appId": "org.webosbrew.openhl",
+      "title": "Half-Life",
+      "version": "0.1.2",
+      "architecture": "arm",
+      "sha256": "06f98ef3638066d2a2c810f1f640d512a5a61970ce1f9500fca2bf69151c37e2",
+      "ipk": "games/openhl010.ipk",
+      "needsOriginalGameData": true,
+      "cover": "https://www.dosdays.co.uk/media/games/halflife/_cover.jpg",
+      "description": "Depois de um experimento dar errado no complexo Black Mesa, Gordon Freeman precisa sobreviver a criaturas alienígenas e forças militares. Requer os arquivos originais de Half-Life.",
+      "genre": "FPS · Ficção científica",
+      "releaseYear": 1998,
+      "developer": "Valve · Xash3D FWGS"
+    },
+    {
+      "id": "org.webosbrew.openlara",
+      "appId": "org.webosbrew.openlara",
+      "title": "OpenLara",
+      "version": "0.1.0",
+      "architecture": "arm",
+      "sha256": "66c7d9c93e0f49d07dcba4411e8e8ffa4a6027a79738a9ab125c4ec135a15832",
+      "ipk": "games/openlara010.ipk",
+      "needsOriginalGameData": true,
+      "cover": "https://images.launchbox-app.com/c52601b4-ca50-4e65-be0a-792b1053486f.png",
+      "description": "Aventure-se por tumbas antigas, resolva enigmas e explore ambientes 3D com o port aberto do motor Tomb Raider. Requer os dados originais do jogo.",
+      "genre": "Aventura · Ação",
+      "releaseYear": 1996,
+      "developer": "Core Design · OpenLara"
+    },
+    {
+      "id": "org.webosbrew.openmohaa",
+      "appId": "org.webosbrew.openmohaa",
+      "title": "Medal of Honor: Allied Assault",
+      "version": "0.82.1",
+      "architecture": "arm",
+      "sha256": "2641e8743ab65b4308fa6c6fa6b015d0a78f8f34c85ae65452525ae618243c83",
+      "ipk": "games/openmohaa0821.ipk",
+      "needsOriginalGameData": true,
+      "cover": "https://images.launchbox-app.com/r2_0fe1e010-39d2-4da0-81d5-de414bb9cad6.jpg",
+      "description": "Acompanhe o tenente Mike Powell em uma campanha de ação ambientada na Segunda Guerra Mundial. O port OpenMoHAA requer os dados originais de Allied Assault.",
+      "genre": "FPS · Segunda Guerra",
+      "releaseYear": 2002,
+      "developer": "2015, Inc. · OpenMoHAA"
+    }
+  ],
+  "repository": "HydraOS Game Ports",
+  "schemaVersion": 2
+}

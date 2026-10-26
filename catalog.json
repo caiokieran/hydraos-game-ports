@@ -7,13 +7,40 @@
       "appId": "org.webosbrew.openjk",
       "title": "Star Wars: Jedi Academy (OpenJK)",
       "version": "0.1.2",
-      "needsOriginalGameData": true,
+      "needsOriginalGameData": false,
       "ipk": "games/openjk012.ipk",
       "cover": "https://static.fnac-static.com/multimedia/images_produits/ZoomPE/0/4/9/5030917020940/tsp20250117073255/Star-Wars-Jedi-Academy.jpg",
-      "description": "Crie seu próprio Jedi, escolha como avançar na Academia e enfrente o lado sombrio em um jogo de ação em primeira e terceira pessoa. O port OpenJK requer os dados originais de Jedi Academy.",
+      "description": "Instale Jedi Academy e seus dados pelo Hydra. Os arquivos do jogo ficam no USB conectado à TV; o IPK permanece oculto do launcher do webOS.",
       "genre": "Ação · FPS · Star Wars",
       "releaseYear": 2003,
-      "developer": "Raven Software · OpenJK"
+      "developer": "Raven Software · OpenJK",
+      "dataRoot": "JediAcademy",
+      "dataFiles": [
+        {
+          "path": "data/base/assets0.pk3",
+          "url": "https://media.githubusercontent.com/media/caiokieran/hydraos-game-ports/main/JediAcademy/data/base/assets0.pk3",
+          "size": 561806019,
+          "sha256": "ffea9e7489bad7175411d122e0652b4272efb67c0e71805d1f4d8058084b5939"
+        },
+        {
+          "path": "data/base/assets1.pk3",
+          "url": "https://media.githubusercontent.com/media/caiokieran/hydraos-game-ports/main/JediAcademy/data/base/assets1.pk3",
+          "size": 652804510,
+          "sha256": "5f196826e226b1115bd46f54697334ca970c8261dd76864c1600179ff38e4c4f"
+        },
+        {
+          "path": "data/base/assets2.pk3",
+          "url": "https://media.githubusercontent.com/media/caiokieran/hydraos-game-ports/main/JediAcademy/data/base/assets2.pk3",
+          "size": 1116384,
+          "sha256": "8f21cdd89afe78fdf916d103117f4b2621c6f4781dee003716057dc705ef98af"
+        },
+        {
+          "path": "data/base/assets3.pk3",
+          "url": "https://media.githubusercontent.com/media/caiokieran/hydraos-game-ports/main/JediAcademy/data/base/assets3.pk3",
+          "size": 9282026,
+          "sha256": "0f542dccb6858fc10a8083ca71f581c9eba93173386e03a9e5e05d3a56118f78"
+        }
+      ]
     },
     {
       "id": "org.webosbrew.devilutionxtest",
@@ -77,5 +104,5 @@
     }
   ],
   "repository": "HydraOS Game Ports",
-  "schemaVersion": 1
+  "schemaVersion": 2
 }
