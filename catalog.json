@@ -1,0 +1,16 @@
+{
+  "games": [
+    {
+      "sha256": "a59ddd3129fe17a68af775cd5f7e18403464e2ae8311489c9cf07899414a372c",
+      "id": "org.webosbrew.openjk",
+      "architecture": "arm",
+      "appId": "org.webosbrew.openjk",
+      "title": "Star Wars: Jedi Academy (OpenJK)",
+      "version": "0.1.2",
+      "needsOriginalGameData": true,
+      "ipk": "games/openjk012.ipk"
+    }
+  ],
+  "repository": "HydraOS OpenJK",
+  "schemaVersion": 1
+}

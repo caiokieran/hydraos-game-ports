@@ -1,0 +1,16 @@
+{
+  "games": [
+    {
+      "sha256": "<64 lowercase hexadecimal characters>",
+      "id": "org.example.game",
+      "architecture": "arm",
+      "appId": "org.example.game",
+      "title": "Compatible game port",
+      "version": "1.0.0",
+      "needsOriginalGameData": false,
+      "ipk": "games/example-game_1.0.0_arm.ipk"
+    }
+  ],
+  "repository": "HydraOS Game Repository",
+  "schemaVersion": 1
+}

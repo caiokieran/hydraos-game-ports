@@ -1,0 +1,3 @@
+/JediAcademy/data/base/*
+!/JediAcademy/data/base/.gitkeep
+*.log
