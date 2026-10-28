@@ -9,7 +9,7 @@
       "version": "0.1.2",
       "needsOriginalGameData": false,
       "ipk": "games/openjk012.ipk",
-      "cover": "https://static.fnac-static.com/multimedia/images_produits/ZoomPE/0/4/9/5030917020940/tsp20250117073255/Star-Wars-Jedi-Academy.jpg",
+      "cover": "https://cdn2.steamgriddb.com/grid/88196ccc5a0f5c77d757aa73903454a3.jpg",
       "description": "Instale Jedi Academy e seus dados pelo Hydra. Os arquivos do jogo ficam no USB conectado à TV; o IPK permanece oculto do launcher do webOS.",
       "genre": "Ação · FPS · Star Wars",
       "releaseYear": 2003,
@@ -40,7 +40,9 @@
           "size": 9282026,
           "sha256": "0f542dccb6858fc10a8083ca71f581c9eba93173386e03a9e5e05d3a56118f78"
         }
-      ]
+      ],
+      "hero": "https://newcdn.igromania.ru/articles/pics/tmp/images/2025/4/2/bb729cd5-3c75-42c9-9d82-4fdf3aae19b6.jpg",
+      "artworkSource": "Grid: AdventureDarkest / SteamGridDB; banner: Igromania"
     },
     {
       "id": "org.webosbrew.devilutionxtest",
@@ -51,11 +53,13 @@
       "sha256": "247df94ef2d667b05a7c717d72f7c5c34eca637a7563e77b6215bb631d1f9a69",
       "ipk": "games/devilutionx155.ipk",
       "needsOriginalGameData": true,
-      "cover": "https://images.launchbox-app.com/4145c24f-2c36-4002-9cda-66c3756bc705.png",
+      "cover": "https://cdn2.steamgriddb.com/grid/0d3781835da392f6e8faaa492173a381.png",
       "description": "Explore as profundezas da Catedral de Tristram neste RPG de ação clássico. O port DevilutionX precisa dos arquivos originais de Diablo ou Hellfire.",
       "genre": "RPG · Ação",
       "releaseYear": 1996,
-      "developer": "Diablo · DevilutionX"
+      "developer": "Diablo · DevilutionX",
+      "hero": "https://imguscdn.gamespress.com/cdn/files/BlizzardLive/2024/01/300046-d8c40734/blizzard_diablo_launch_1920x1080.jpg?lightbox=y&otf=y&sky=cb97084ff11861babe22f070daa82f7c51031fb3f8b77f6f7a6b83b68ab75538",
+      "artworkSource": "Grid: LeeLevLiveath / SteamGridDB; banner: Blizzard Press Center"
     },
     {
       "id": "org.webosbrew.openhl",
@@ -66,11 +70,13 @@
       "sha256": "06f98ef3638066d2a2c810f1f640d512a5a61970ce1f9500fca2bf69151c37e2",
       "ipk": "games/openhl010.ipk",
       "needsOriginalGameData": true,
-      "cover": "https://www.dosdays.co.uk/media/games/halflife/_cover.jpg",
+      "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/70/library_600x900.jpg",
       "description": "Depois de um experimento dar errado no complexo Black Mesa, Gordon Freeman precisa sobreviver a criaturas alienígenas e forças militares. Requer os arquivos originais de Half-Life.",
       "genre": "FPS · Ficção científica",
       "releaseYear": 1998,
-      "developer": "Valve · Xash3D FWGS"
+      "developer": "Valve · Xash3D FWGS",
+      "hero": "https://cdn.cloudflare.steamstatic.com/steam/apps/70/library_hero.jpg",
+      "artworkSource": "Steam"
     },
     {
       "id": "org.webosbrew.openlara",
@@ -81,11 +87,13 @@
       "sha256": "66c7d9c93e0f49d07dcba4411e8e8ffa4a6027a79738a9ab125c4ec135a15832",
       "ipk": "games/openlara010.ipk",
       "needsOriginalGameData": true,
-      "cover": "https://images.launchbox-app.com/c52601b4-ca50-4e65-be0a-792b1053486f.png",
+      "cover": "https://cdn.cloudflare.steamstatic.com/steam/apps/224960/library_600x900.jpg",
       "description": "Aventure-se por tumbas antigas, resolva enigmas e explore ambientes 3D com o port aberto do motor Tomb Raider. Requer os dados originais do jogo.",
       "genre": "Aventura · Ação",
       "releaseYear": 1996,
-      "developer": "Core Design · OpenLara"
+      "developer": "Core Design · OpenLara",
+      "hero": "https://cdn.cloudflare.steamstatic.com/steam/apps/224960/library_hero.jpg",
+      "artworkSource": "Steam"
     },
     {
       "id": "org.webosbrew.openmohaa",
@@ -96,11 +104,13 @@
       "sha256": "2641e8743ab65b4308fa6c6fa6b015d0a78f8f34c85ae65452525ae618243c83",
       "ipk": "games/openmohaa0821.ipk",
       "needsOriginalGameData": true,
-      "cover": "https://images.launchbox-app.com/r2_0fe1e010-39d2-4da0-81d5-de414bb9cad6.jpg",
+      "cover": "https://images.launchbox-app.com/723c27d8-64ce-4888-8936-65a4e0bdd41b.jpg",
       "description": "Acompanhe o tenente Mike Powell em uma campanha de ação ambientada na Segunda Guerra Mundial. O port OpenMoHAA requer os dados originais de Allied Assault.",
       "genre": "FPS · Segunda Guerra",
       "releaseYear": 2002,
-      "developer": "2015, Inc. · OpenMoHAA"
+      "developer": "2015, Inc. · OpenMoHAA",
+      "hero": "https://images.launchbox-app.com/b1e0c6e0-a440-4a98-9a92-507ee1037643.png",
+      "artworkSource": "LaunchBox Games Database"
     }
   ],
   "repository": "HydraOS Game Ports",
